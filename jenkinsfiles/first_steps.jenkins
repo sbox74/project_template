@@ -11,12 +11,12 @@ pipeline {
         timestamps()
     }
     stages {
-        stage("First step") {
+        stage('First step') {
             steps {
                 sh 'ssh user@14.1.0.70 \'hostname\''
             }
         }
-        stage("Second step") {
+        stage('Second step') {
             steps {
                 sh 'ssh user@14.1.0.70 \'uptime\''
             }
